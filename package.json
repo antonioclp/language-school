@@ -4,8 +4,8 @@
   "description": "Student grade management",
   "main": "src/",
   "scripts": {
-    "front": "cd ./front-end && npm run dev",
-    "back": "cd ./back-end && docker-compose up -d && mvn spring-boot:run",
+    "front": "cd ./front-end && npm install && npm run dev",
+    "back": "cd ./back-end && sudo docker-compose up -d && mvn spring-boot:run",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

@@ -1,5 +1,7 @@
 package app.back.springtemplate.models.entity;
 
+import java.text.DecimalFormat;
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -137,6 +139,12 @@ public class Student {
 
     if (count > 0) {
       this.averageGrade = totalGrades / count;
+
+      DecimalFormat df = new DecimalFormat("#.#");
+      String fd = df.format(averageGrade);
+
+      this.averageGrade = Double.parseDouble(fd);
+
     } else {
       this.averageGrade = 0.0;
     }
