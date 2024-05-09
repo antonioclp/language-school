@@ -3,6 +3,8 @@
 import { useEffect, useState } from "react";
 import { fetchStudents } from "@/utils/api";
 import { Student } from "@/interfaces";
+
+// Styles
 import "@/styles/pages/app.css";
 
 /**
