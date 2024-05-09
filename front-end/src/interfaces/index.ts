@@ -6,3 +6,8 @@ export interface Student {
   portugueseGrade: number | null;
   japaneseGrade: number | null;
 }
+
+export interface IPostStudent {
+  registration: number;
+  student: Student;
+}
