@@ -13,5 +13,5 @@ export async function fetchStudents(): Promise<Student[]> {
     throw new Error(object.message);
   }
 
-  return object.data;
+  return object.data = [];
 }
