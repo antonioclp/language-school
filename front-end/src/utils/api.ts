@@ -21,10 +21,10 @@ export async function fetchStudents(): Promise<Student[]> {
   }
 }
 
-export async function postStudent({
-  registration,
-  student,
-}: IPostStudent): Promise<number> {
+export async function postStudent(
+  registration: number,
+  student: IPostStudent
+): Promise<number> {
   try {
     const { studentName, englishGrade, portugueseGrade, japaneseGrade } =
       student;
@@ -35,6 +35,9 @@ export async function postStudent({
 
     const response = await fetch(url, {
       method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
       body: JSON.stringify({
         registration,
         studentName,

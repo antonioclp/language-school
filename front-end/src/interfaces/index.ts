@@ -8,6 +8,8 @@ export interface Student {
 }
 
 export interface IPostStudent {
-  registration: number;
-  student: Student;
+  studentName: string;
+  englishGrade: number | null;
+  portugueseGrade: number | null;
+  japaneseGrade: number | null;
 }
