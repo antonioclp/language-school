@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { fetchStudents } from "@/utils/api";
 import { Student } from "@/interfaces";
 
@@ -30,7 +31,7 @@ export default async function StudentsGrid() {
           }) : ( null )}
         </tbody>
       </table>
-      {students.length === 0 ? <p>No students found.</p> : null}
+      {students.length === 0 ? <p>No students found try <Link href="/student/register">register a student</Link>.</p> : null}
     </main>
   );
 }
