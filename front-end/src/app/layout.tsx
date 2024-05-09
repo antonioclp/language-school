@@ -3,7 +3,7 @@ import { EB_Garamond } from "next/font/google";
 import "../styles/global.css";
 import Header from "@/components/header";
 
-const eb_garamond = EB_Garamond({ subsets: ["latin"], weight: ["700"] });
+const eb_garamond = EB_Garamond({ subsets: ["latin"], weight: ["500", "700"] });
 
 export const metadata: Metadata = {
   title: "Old School",

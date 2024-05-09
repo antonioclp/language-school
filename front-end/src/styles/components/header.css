@@ -11,6 +11,7 @@
 .hdr-title {
   h2 {
     font-size: 6vh;
+    font-weight: 700;
     background: -webkit-linear-gradient(#aa16ff, #1e1ead);
     background-clip: text;
     -webkit-text-fill-color: transparent;

@@ -8,8 +8,8 @@ export default function Header() {
         <h2>OLD SCHOOL</h2>
       </div>
       <nav className="hdr-nav">
-        <Link href="/students">
-          <span>Students</span>
+        <Link href="/student/register">
+          <span>Register</span>
         </Link>
       </nav>
     </header>
