@@ -2,7 +2,7 @@ import { fetchStudents } from "@/utils/api";
 import { Student } from "@/interfaces";
 
 export default async function StudentsGrid() {
-  const students = await fetchStudents();
+  const students: Student[] = await fetchStudents() || [];
 
   return (
     <main className="m-app">
@@ -17,7 +17,7 @@ export default async function StudentsGrid() {
           </tr>
         </thead>
         <tbody>
-          {students.map((s: Student) => {
+          {students.length > 0 ? students.map((s: Student) => {
             return (
               <tr key={s.id}>
                 <td>{s.studentName}</td>
@@ -27,7 +27,7 @@ export default async function StudentsGrid() {
                 <td>{s.japaneseGrade}</td>
               </tr>
             );
-          })}
+          }) : ( null )}
         </tbody>
       </table>
       {students.length === 0 ? <p>No students found.</p> : null}
