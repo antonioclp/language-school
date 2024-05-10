@@ -1,5 +1,8 @@
 import { updateStudent } from "@/utils/api";
 
+// Styles
+import "@/styles/pages/update.css";
+
 export default function UpdateStudent() {
   async function formAction(form: FormData) {
     "use server";
@@ -28,7 +31,7 @@ export default function UpdateStudent() {
             max={10}
           />
         </label>
-        <label htmlFor="english-grade">
+        <label className="form_sp__label" htmlFor="english-grade">
           <span>English Grade</span>
           <input
             type="number"
@@ -38,7 +41,7 @@ export default function UpdateStudent() {
             max={10}
           />
         </label>
-        <label htmlFor="portuguese-grade">
+        <label className="form_sp__label" htmlFor="portuguese-grade">
           <span>Portuguese Grade</span>
           <input
             type="number"
@@ -48,7 +51,7 @@ export default function UpdateStudent() {
             max={10}
           />
         </label>
-        <label htmlFor="japanese-grade">
+        <label className="form_sp__label" htmlFor="japanese-grade">
           <span>Japanese Grade</span>
           <input
             type="number"
