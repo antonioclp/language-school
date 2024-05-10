@@ -22,7 +22,7 @@ export default async function RegisterStudent() {
   return (
     <main className="m-sr">
       <form className="m-sr--form" action={formAction}>
-        <label className="form__label" htmlFor="registration">
+        <label className="form_sp__label" htmlFor="registration">
           <span>Registration</span>
           <input type="number" id="registration" name="registration" min={0} />
         </label>
