@@ -23,5 +23,10 @@
 }
 
 .hdr-nav {
-  margin-left: 5%;
+  width: 100%;
+  margin-left: 10%;
+
+  span {
+    margin-left: 5%;
+  }
 }

@@ -1,4 +1,6 @@
 import Link from "next/link";
+
+// Styles
 import "@/styles/components/header.css";
 
 export default function Header() {
@@ -9,7 +11,10 @@ export default function Header() {
       </div>
       <nav className="hdr-nav">
         <Link href="/student/register">
-          <span>Register</span>
+          <span>Register student</span>
+        </Link>
+        <Link href="/student/update">
+          <span>Update student</span>
         </Link>
       </nav>
     </header>
