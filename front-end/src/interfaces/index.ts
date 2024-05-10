@@ -13,3 +13,9 @@ export interface IPostStudent {
   portugueseGrade: number | null;
   japaneseGrade: number | null;
 }
+
+export interface IUpdateStudent {
+  englishGrade: number | null;
+  portugueseGrade: number | null;
+  japaneseGrade: number | null;
+}

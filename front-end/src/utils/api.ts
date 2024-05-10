@@ -1,4 +1,4 @@
-import { IPostStudent, Student } from "@/interfaces";
+import { IPostStudent, IUpdateStudent, Student } from "@/interfaces";
 
 export async function fetchStudents(): Promise<Student[]> {
   try {
@@ -42,6 +42,43 @@ export async function postStudent(
       body: JSON.stringify({
         registration,
         studentName,
+        englishGrade,
+        portugueseGrade,
+        japaneseGrade,
+      }),
+    });
+
+    const object = await response.json();
+
+    const status = object.status;
+
+    if (!object) {
+      throw new Error(object.message);
+    }
+
+    return status;
+  } catch (err) {
+    console.error(err);
+    return 505;
+  }
+}
+
+export async function updateStudent(
+  registration: number,
+  updatedStudent: IUpdateStudent
+) {
+  try {
+    const { englishGrade, portugueseGrade, japaneseGrade } = updatedStudent;
+
+    const url = `http://localhost:8080/students/update/${registration}`;
+
+    const response = await fetch(url, {
+      method: "PUT",
+      cache: "no-cache",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
         englishGrade,
         portugueseGrade,
         japaneseGrade,
