@@ -1,9 +1,16 @@
 import type { Metadata } from "next";
-import { EB_Garamond } from "next/font/google";
-import "../styles/global.css";
+import { EB_Garamond, Poppins } from "next/font/google";
+
+// Components
 import Header from "@/components/header";
 
-const eb_garamond = EB_Garamond({ subsets: ["latin"], weight: ["700"] });
+// Styles
+import "../styles/global.css";
+
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["500", "600", "700", "800", "900"],
+});
 
 export const metadata: Metadata = {
   title: "Old School",
@@ -17,10 +24,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={eb_garamond.className}>
+      <body className={poppins.className}>
         <Header />
         {children}
-        </body>
+      </body>
     </html>
   );
 }
