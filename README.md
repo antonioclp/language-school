@@ -2,12 +2,12 @@
   <img src="https://cdn-icons-png.flaticon.com/512/5968/5968517.png" width="200">
 </p>
 
-<h3 align="center">OLD SCHOOL</h3>
+<h3 align="center">Language School</h3>
 
 <div align="center">
 
-[![Status](https://img.shields.io/badge/status-active-success.svg)](https://github.com/antonioclp/old-school) 
-[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/antonioclp/old-school.svg)](https://github.com/antonioclp/old-school)
+[![Status](https://img.shields.io/badge/status-active-success.svg)](https://github.com/antonioclp/language-school) 
+[![GitHub Pull Requests](https://img.shields.io/github/issues-pr/antonioclp/language-school.svg)](https://github.com/antonioclp/language-school)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](/LICENSE)
 
 </div>
@@ -21,11 +21,9 @@
 ### Usage
 > Use the development branch `branch/dev`
 ```bash
-git clone git@github.com:antonioclp/old-school.git
+git clone git@github.com:antonioclp/language-school.git
 
-cd old-school
-
-git checkout branch/dev
+cd language-school
 ```
 
 #### Front-end
